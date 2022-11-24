@@ -12,7 +12,57 @@ struct ContentView: View {
         //        Challenge1()
         //        Challenge2()
         //        Challenge3()
-        Challenge4()
+        //        Challenge4()
+        //        Challenge5()
+        Challenge6()
+    }
+}
+
+struct Challenge6: View {
+    let weather = Weather()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20.0) {
+            CurrentConditions()
+            
+            Divider()
+            
+            HStack {
+                ForEach(weather.hourlyForecast, id: \.hour) { forecast in
+                    Spacer()
+                    HourlyForecast(forecast: forecast)
+                    Spacer()
+                }
+            }
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(
+            .blue
+        )
+    }
+}
+
+struct Challenge5: View {
+    let mix = MeowMix()
+    
+    var body: some View {
+        VStack {
+            MeowMixHeader().padding()
+            
+            Divider().padding()
+            
+            //            List(mix.tracks, id: \.title) { track in
+            //                TrackRow(track: track)
+            //            }
+            
+            List(mix.tracks) { track in
+                TrackRow(track: track)
+            }
+            
+            FeaturedCats(artists: mix.tracks.map { $0.artist })
+        }
+        
     }
 }
 
@@ -102,7 +152,12 @@ struct Challenge1: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .previewInterfaceOrientation(.portrait)
+            ContentView()
+                .previewInterfaceOrientation(.landscapeRight)
+        }
     }
 }
 

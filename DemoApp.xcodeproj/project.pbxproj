@@ -11,6 +11,12 @@
 		B3624E092927CA9C0074A7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3624E082927CA9C0074A7F4 /* ContentView.swift */; };
 		B3624E0B2927CA9E0074A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3624E0A2927CA9E0074A7F4 /* Assets.xcassets */; };
 		B3624E0E2927CA9E0074A7F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3624E0D2927CA9E0074A7F4 /* Preview Assets.xcassets */; };
+		B3BC6B24292FB562004362B8 /* CurrentConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC6B23292FB562004362B8 /* CurrentConditions.swift */; };
+		B3BC6B26292FB597004362B8 /* HourlyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC6B25292FB597004362B8 /* HourlyCast.swift */; };
+		B3BC6B28292FB5AF004362B8 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC6B27292FB5AF004362B8 /* WeatherDataSource.swift */; };
+		B3CCA1C0292E6FFF004FC119 /* MeowMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CCA1BF292E6FFF004FC119 /* MeowMix.swift */; };
+		B3CCA1C2292E7024004FC119 /* MeowMixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CCA1C1292E7024004FC119 /* MeowMixHeader.swift */; };
+		B3CCA1C4292E7443004FC119 /* TrackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CCA1C3292E7443004FC119 /* TrackViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B3624E082927CA9C0074A7F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3624E0A2927CA9E0074A7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3624E0D2927CA9E0074A7F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3BC6B23292FB562004362B8 /* CurrentConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditions.swift; sourceTree = "<group>"; };
+		B3BC6B25292FB597004362B8 /* HourlyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCast.swift; sourceTree = "<group>"; };
+		B3BC6B27292FB5AF004362B8 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		B3CCA1BF292E6FFF004FC119 /* MeowMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMix.swift; sourceTree = "<group>"; };
+		B3CCA1C1292E7024004FC119 /* MeowMixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMixHeader.swift; sourceTree = "<group>"; };
+		B3CCA1C3292E7443004FC119 /* TrackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,12 @@
 				B3624E082927CA9C0074A7F4 /* ContentView.swift */,
 				B3624E0A2927CA9E0074A7F4 /* Assets.xcassets */,
 				B3624E0C2927CA9E0074A7F4 /* Preview Content */,
+				B3CCA1BF292E6FFF004FC119 /* MeowMix.swift */,
+				B3CCA1C1292E7024004FC119 /* MeowMixHeader.swift */,
+				B3CCA1C3292E7443004FC119 /* TrackViews.swift */,
+				B3BC6B23292FB562004362B8 /* CurrentConditions.swift */,
+				B3BC6B25292FB597004362B8 /* HourlyCast.swift */,
+				B3BC6B27292FB5AF004362B8 /* WeatherDataSource.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CCA1C0292E6FFF004FC119 /* MeowMix.swift in Sources */,
+				B3CCA1C2292E7024004FC119 /* MeowMixHeader.swift in Sources */,
+				B3CCA1C4292E7443004FC119 /* TrackViews.swift in Sources */,
 				B3624E092927CA9C0074A7F4 /* ContentView.swift in Sources */,
 				B3624E072927CA9C0074A7F4 /* DemoAppApp.swift in Sources */,
+				B3BC6B28292FB5AF004362B8 /* WeatherDataSource.swift in Sources */,
+				B3BC6B24292FB562004362B8 /* CurrentConditions.swift in Sources */,
+				B3BC6B26292FB597004362B8 /* HourlyCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
