@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31807CE292FC6100063F677 /* MessagePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31807CD292FC6100063F677 /* MessagePopover.swift */; };
+		B31807D0292FC6240063F677 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31807CF292FC6240063F677 /* DetailView.swift */; };
 		B3624E072927CA9C0074A7F4 /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3624E062927CA9C0074A7F4 /* DemoAppApp.swift */; };
 		B3624E092927CA9C0074A7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3624E082927CA9C0074A7F4 /* ContentView.swift */; };
 		B3624E0B2927CA9E0074A7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3624E0A2927CA9E0074A7F4 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31807CD292FC6100063F677 /* MessagePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopover.swift; sourceTree = "<group>"; };
+		B31807CF292FC6240063F677 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B3624E032927CA9C0074A7F4 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3624E062927CA9C0074A7F4 /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
 		B3624E082927CA9C0074A7F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				B3BC6B23292FB562004362B8 /* CurrentConditions.swift */,
 				B3BC6B25292FB597004362B8 /* HourlyCast.swift */,
 				B3BC6B27292FB5AF004362B8 /* WeatherDataSource.swift */,
+				B31807CD292FC6100063F677 /* MessagePopover.swift */,
+				B31807CF292FC6240063F677 /* DetailView.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -158,10 +164,12 @@
 				B3CCA1C0292E6FFF004FC119 /* MeowMix.swift in Sources */,
 				B3CCA1C2292E7024004FC119 /* MeowMixHeader.swift in Sources */,
 				B3CCA1C4292E7443004FC119 /* TrackViews.swift in Sources */,
+				B31807D0292FC6240063F677 /* DetailView.swift in Sources */,
 				B3624E092927CA9C0074A7F4 /* ContentView.swift in Sources */,
 				B3624E072927CA9C0074A7F4 /* DemoAppApp.swift in Sources */,
 				B3BC6B28292FB5AF004362B8 /* WeatherDataSource.swift in Sources */,
 				B3BC6B24292FB562004362B8 /* CurrentConditions.swift in Sources */,
+				B31807CE292FC6100063F677 /* MessagePopover.swift in Sources */,
 				B3BC6B26292FB597004362B8 /* HourlyCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

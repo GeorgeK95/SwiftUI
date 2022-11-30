@@ -14,13 +14,50 @@ struct ContentView: View {
         //        Challenge3()
         //        Challenge4()
         //        Challenge5()
-        Challenge6()
+        //        Challenge7()
+        Challenge7()
+    }
+}
+
+struct Challenge7: View {
+    let mix = MeowMix()
+    @State private var showMessage = false
+    
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 0.0) {
+                MeowMixHeader()
+                    .padding()
+                    .onTapGesture {
+                        showMessage = true
+                    }
+                    .popover(isPresented: $showMessage, content: {
+                        MessagePopover()
+                    })
+                
+                Divider().padding()
+                
+                List(mix.tracks) { track in
+                    NavigationLink(
+                        destination: DetailView(track: track),
+                        label: {
+                            TrackRow(track: track)
+                        })
+                }
+                
+                FeaturedCats(artists: mix.tracks.map(\.artist))
+                    .padding(.vertical)
+                    .background(Color.gray.opacity(0.2))
+            }
+            .navigationBarHidden(true)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct Challenge6: View {
     let weather = Weather()
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20.0) {
             CurrentConditions()
